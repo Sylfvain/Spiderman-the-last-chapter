@@ -32,5 +32,16 @@ public class Spiderman extends Actor
                 move ( - 5 );
             }
         }
-    }
+        if (isAtEdge()) {
+    
+    setRotation(getRotation() + 360);
+    move(5);
+}
+if (isAtEdge()) {
+    setLocation(getX() - 5, getY());
+}
+
+}
+
+    
 }

@@ -15,5 +15,13 @@ public class Venom extends Actor
     public void act()
     {
         setImage ( "venom.png" );
-    }
+        move (1);
+        setRotation(90);
+        if (Greenfoot.getRandomNumber(100)<10){
+            turn(5);
+        }
 }
+}
+
+        
+    
