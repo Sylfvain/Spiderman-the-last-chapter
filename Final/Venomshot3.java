@@ -1,22 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Venomshot here.
+ * Write a description of class Venomshot3 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Venomshot extends Actor
+public class Venomshot3 extends Actor
 {
     int MOVE_VAL=6;
     int BULL_SIZE =12;
     // Disparos creador
-    public Venomshot()
+    public Venomshot3()
     {
         getImage().scale(BULL_SIZE,BULL_SIZE);
     }
     /**
-     * Act - do whatever the Venomshot wants to do. This method is called whenever
+     * Act - do whatever the Venomshot3 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
@@ -28,8 +28,8 @@ public class Venomshot extends Actor
            Spiderman h=(Spiderman) getOneIntersectingObject(Spiderman.class);
         if (h!=null)
         {
-            MyWorld.SpidermanLifeCount.add(-1);
-            if(MyWorld.SpidermanLifeCount.getValue()==0)
+            Final_boss.SpidermanLifeCount.add(-1);
+            if(Final_boss.SpidermanLifeCount.getValue()==0)
             {
                 getWorld().removeObject(h);
                 Greenfoot.setWorld(new Lost());
